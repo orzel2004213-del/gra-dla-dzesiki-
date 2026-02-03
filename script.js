@@ -1,5 +1,7 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
+const headerText = document.getElementById("headerText");
+const mainGif = document.getElementById("mainGif");
 
 let scale = 1;
 let msgIndex = 0;
@@ -17,10 +19,10 @@ noBtn.addEventListener("click", () => {
   noBtn.innerText = messages[msgIndex];
   msgIndex = (msgIndex + 1) % messages.length;
   
-  scale *= 1.5;
+  scale += 0.5;
   yesBtn.style.transform = `scale(${scale})`;
 
-  if (scale > 4) {
+  if (scale > 5) {
     noBtn.style.display = "none";
   }
 });
@@ -33,11 +35,9 @@ yesBtn.addEventListener("click", () => {
   });
 
   document.body.innerHTML = `
-    <div style="height:100dvh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #ff9a9e, #fecfef); text-align:center; padding:20px;">
-      <h1 style="font-size:32px; color:#d6336c; font-family:sans-serif;">
-        YAYYY SHE SAID YESSS!<br>I LOVE YOU DZESIKAAAAAAAA ❤️❤️❤️
-      </h1>
-      <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" style="width:85%; max-width:300px; border-radius:15px; margin-top:25px;">
+    <div style="height:100dvh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#ffb6c1; text-align:center; padding:20px;">
+      <h1 style="font-size:30px; color:#d6336c;">YAYYY SHE SAID YESSS!<br>I LOVE YOU DZESIKAAAAAAAA ❤️❤️❤️</h1>
+      <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" style="width:80%; max-width:300px; border-radius:15px; margin-top:20px;">
     </div>
   `;
 });
