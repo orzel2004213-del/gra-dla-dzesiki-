@@ -52,4 +52,17 @@ yesBtn.addEventListener("click", () => {
     confetti({
         particleCount: 200,
         spread: 80,
-        origin: { y
+        origin: { y: 0.6 },
+        colors: ['#ff0000', '#ff69b4', '#ffffff', '#ff1493']
+    });
+
+    document.body.innerHTML = `
+    <div style="height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(135deg,#ff758c,#ff7eb3);text-align:center;font-family:'Comic Sans MS',cursive;padding:20px;color:white;">
+      <h1 style="font-size:32px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+        SHE SAID YES! 💘🥹<br><br>
+        Best girlfriend and valentine in the whole world!<br>
+        I love you so much baby❤️❤️❤️
+      </h1>
+    </div>
+  `;
+});
