@@ -6,12 +6,12 @@ let noScale = 1;
 let msgIndex = 0;
 
 const messages = [
-  "No :sob:",
+  "No 😭",
   "Are you sure?",
-  "Pookie please... :pleading_face:",
+  "Pookie please... 🥺",
   "Really??",
   "I'm gonna cry...",
-  "Think again! :heart:"
+  "Think again! ❤️"
 ];
 
 noBtn.addEventListener("click", () => {
@@ -39,7 +39,7 @@ yesBtn.addEventListener("click", () => {
 
   document.body.innerHTML = `
     <div style="height:100dvh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#ffb6c1; text-align:center; padding:20px;">
-      <h1 style="font-size:30px; color:#d6336c; font-family:sans-serif;">YAYYY YOU SAID YESS!!!<br>I LOVE YOU DZESIKAAAAAAAA :heart::heart::heart:</h1>
+      <h1 style="font-size:30px; color:#d6336c; font-family:sans-serif;">YAYYY YOU SAID YESS!!!<br>I LOVE YOU DZESIKAAAAAAAA ❤️❤️❤️</h1>
       <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" style="width:80%; max-width:300px; border-radius:15px; margin-top:20px;">
     </div>
   `;
