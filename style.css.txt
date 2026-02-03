@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.valentine-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: relative;
+  height: 140px;
+}
+
+button {
+  position: absolute;
+  width: 140px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+#noBtn {
+  background: #ddd;
+  right: 0;
+  bottom: 0;
+}
